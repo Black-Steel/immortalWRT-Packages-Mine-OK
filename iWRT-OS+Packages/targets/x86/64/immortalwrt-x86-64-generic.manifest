@@ -69,7 +69,7 @@ ipv6helper - 5
 jansson4 - 2.14-r3
 jshn - 2024.03.29~eb9bcb64-r1
 jsonfilter - 2024.01.23~594cfa86-r1
-kernel - 6.1.82~044e565c91d0af127584a7ae1527d02b-r1
+kernel - 6.1.82~c9c26d1be9d940d3495aa85054f35ded-r1
 kmod-8139cp - 6.1.82-r1
 kmod-8139too - 6.1.82-r1
 kmod-ac97 - 6.1.82-r1
