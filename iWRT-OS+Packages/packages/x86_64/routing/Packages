@@ -1,1 +1,12 @@
+Package: luci-app-hnet
+Version: 2018.12.21~c4376661-r1
+Depends: libc
+License: GPL-2.0-only
+Section: luci
+Architecture: x86_64
+Installed-Size: 235520
+Filename: luci-app-hnet_2018.12.21~c4376661-r1_x86_64.ipk
+Size: 57614
+SHA256sum: 3f65886031b71c48970f7e656cea93e072ab48cae0c51658dfaabfd5c652279d
+Description:  HNCP Homenet configuration and visualization
 
