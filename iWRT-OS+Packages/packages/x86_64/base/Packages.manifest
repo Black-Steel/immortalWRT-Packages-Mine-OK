@@ -395,6 +395,23 @@ Size: 756107
 SHA256sum: 3f0e4d7e80ba28e4dc723cbc75688f493c9dd0c370ee406768a094b1fad490de
 Description:  koolproxy bin is from koolshare
 
+Package: libbfd
+Version: 2.42-r1
+Depends: libc, zlib
+Source: feeds/base/devel/binutils
+SourceName: binutils
+License: GPL-3.0+
+Section: libs
+SourceDateEpoch: 1707777663
+CPE-ID: cpe:/a:gnu:binutils
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 1157120
+Filename: libbfd_2.42-r1_x86_64.ipk
+Size: 469785
+SHA256sum: 24c848e0b1c63fdb8a23055a4afe474b5b094b0bf49cb8d7af8fe75c3ac176e9
+Description:  libbfd
+
 Package: libblkid1
 Version: 2.39.3-r1
 Depends: libc, libuuid1
@@ -580,6 +597,102 @@ Filename: libelf1_0.189-r1_x86_64.ipk
 Size: 41013
 SHA256sum: 644d7f44cf2f0e364c20f9adcf321b143bdd6115aaec7157456a31bcc0284a71
 Description:  ELF manipulation libraries (libelf)
+
+Package: libevent2-7
+Version: 2.1.12-r2
+Depends: libc
+Provides: libevent2
+Source: feeds/base/libs/libevent2
+SourceName: libevent2
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1710289483
+URL: http://libevent.org
+ABIVersion: -7
+CPE-ID: cpe:/a:libevent_project:libevent
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: x86_64
+Installed-Size: 235520
+Filename: libevent2-7_2.1.12-r2_x86_64.ipk
+Size: 107738
+SHA256sum: df33d3f471b32bf316b12a54255cff9ed672f15915f6903b14db2b379915f7f0
+Description:  The libevent API provides a mechanism to execute a callback function
+ when a specific event occurs on a file descriptor or after a timeout
+ has been reached. Furthermore, libevent also support callbacks due
+ to signals or regular timeouts.
+ 
+ libevent is meant to replace the event loop found in event driven
+ network servers. An application just needs to call event_dispatch()
+ and then add or remove events dynamically without having to change
+ the event loop.
+ 
+ This package contains the libevent shared library historically
+ containing both the core & extra libraries.
+
+Package: libevent2-core7
+Version: 2.1.12-r2
+Depends: libc
+Provides: libevent2-core
+Source: feeds/base/libs/libevent2
+SourceName: libevent2
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1710289483
+URL: http://libevent.org
+ABIVersion: 7
+CPE-ID: cpe:/a:libevent_project:libevent
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: x86_64
+Installed-Size: 143360
+Filename: libevent2-core7_2.1.12-r2_x86_64.ipk
+Size: 63429
+SHA256sum: ce30fa2ab8f582f0a9a2b8e1417c281f53badda24a23509b92905a780d8d2077
+Description:  The libevent API provides a mechanism to execute a callback function
+ when a specific event occurs on a file descriptor or after a timeout
+ has been reached. Furthermore, libevent also support callbacks due
+ to signals or regular timeouts.
+ 
+ libevent is meant to replace the event loop found in event driven
+ network servers. An application just needs to call event_dispatch()
+ and then add or remove events dynamically without having to change
+ the event loop.
+ 
+ This package contains the libevent core shared library for the event,
+ buffer & utility functions.
+
+Package: libevent2-pthreads7
+Version: 2.1.12-r2
+Depends: libc, libpthread, libevent2-core7
+Provides: libevent2-pthreads
+Source: feeds/base/libs/libevent2
+SourceName: libevent2
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1710289483
+URL: http://libevent.org
+ABIVersion: 7
+CPE-ID: cpe:/a:libevent_project:libevent
+Maintainer: Jo-Philipp Wich <jo@mein.io>
+Architecture: x86_64
+Installed-Size: 20480
+Filename: libevent2-pthreads7_2.1.12-r2_x86_64.ipk
+Size: 3020
+SHA256sum: b7240ffce8cc992cc9ec9dcf72fc69c4bd7dcf39c8549989929119fc246edffc
+Description:  The libevent API provides a mechanism to execute a callback function
+ when a specific event occurs on a file descriptor or after a timeout
+ has been reached. Furthermore, libevent also support callbacks due
+ to signals or regular timeouts.
+ 
+ libevent is meant to replace the event loop found in event driven
+ network servers. An application just needs to call event_dispatch()
+ and then add or remove events dynamically without having to change
+ the event loop.
+ 
+ This package contains the libevent Pthreads shared library for
+ threading & locking.
 
 Package: libext2fs2
 Version: 1.47.0-r2
@@ -1017,6 +1130,46 @@ SHA256sum: 24cee6bed623b770d2c618f6cb43ce6f2e54b64020de65ad73508ef5deb543a8
 Description:  libnftnl is a userspace library providing a low-level netlink
  programming interface (API) to the in-kernel nf_tables subsystem.
 
+Package: libnl-core200
+Version: 3.9.0-r1
+Depends: libc, libpthread
+Provides: libnl-core
+Source: feeds/base/libs/libnl
+SourceName: libnl
+License: LGPL-2.1
+LicenseFiles: COPYING
+Section: libs
+SourceDateEpoch: 1704380804
+URL: http://www.infradead.org/~tgr/libnl/
+ABIVersion: 200
+CPE-ID: cpe:/a:libnl_project:libnl
+Architecture: x86_64
+Installed-Size: 112640
+Filename: libnl-core200_3.9.0-r1_x86_64.ipk
+Size: 43981
+SHA256sum: d37e20fbc0b354f2df9e0384887bd77eb5c7947653943306371ce57e41b1edc2
+Description:  Common code for all netlink libraries
+
+Package: libnl-genl200
+Version: 3.9.0-r1
+Depends: libc, libnl-core200
+Provides: libnl-genl
+Source: feeds/base/libs/libnl
+SourceName: libnl
+License: LGPL-2.1
+LicenseFiles: COPYING
+Section: libs
+SourceDateEpoch: 1704380804
+URL: http://www.infradead.org/~tgr/libnl/
+ABIVersion: 200
+CPE-ID: cpe:/a:libnl_project:libnl
+Architecture: x86_64
+Installed-Size: 40960
+Filename: libnl-genl200_3.9.0-r1_x86_64.ipk
+Size: 9061
+SHA256sum: 7fb7c5e441634ce155d10db2155f5f54a01b34373b759022be70c8a5e93ac6e8
+Description:  Generic Netlink Library Functions
+
 Package: libnl-tiny1
 Version: 2023.12.05~965c4bf4-r1
 Depends: libc
@@ -1105,6 +1258,66 @@ Description:  The OpenSSL Project is a collaborative effort to develop a robust,
  general-purpose cryptography library.
  This package contains the OpenSSL shared libraries, needed by other programs.
 
+Package: libpcap1
+Version: 1.10.4-r1
+Depends: libc
+Provides: libpcap
+Source: feeds/base/libs/libpcap
+SourceName: libpcap
+License: BSD-3-Clause
+LicenseFiles: LICENSE
+Section: libs
+SourceDateEpoch: 1695147673
+URL: http://www.tcpdump.org/
+ABIVersion: 1
+CPE-ID: cpe:/a:tcpdump:libpcap
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 245760
+Filename: libpcap1_1.10.4-r1_x86_64.ipk
+Size: 101929
+SHA256sum: c37b00e65ded623d36d1ae33be3e766dcf174e8abee7688e5dfa69dab1f57327
+Description:  This package contains a system-independent library for user-level network packet
+ capture.
+
+Package: libpcre2-16
+Version: 10.42-r1
+Depends: libc
+Source: feeds/base/libs/pcre2
+SourceName: pcre2
+License: BSD-3-Clause
+LicenseFiles: LICENCE
+Section: libs
+SourceDateEpoch: 1685257087
+URL: https://www.pcre.org/
+CPE-ID: cpe:/a:pcre:pcre
+Maintainer: Shane Peelar <lookatyouhacker@gmail.com>
+Architecture: x86_64
+Installed-Size: 460800
+Filename: libpcre2-16_10.42-r1_x86_64.ipk
+Size: 172550
+SHA256sum: 45aead006ad52db286e46760393ec955d685f4f3333eddfd9869229ca746e376
+Description:  A Perl Compatible Regular Expression library (16bit support)
+
+Package: libpcre2-32
+Version: 10.42-r1
+Depends: libc
+Source: feeds/base/libs/pcre2
+SourceName: pcre2
+License: BSD-3-Clause
+LicenseFiles: LICENCE
+Section: libs
+SourceDateEpoch: 1685257087
+URL: https://www.pcre.org/
+CPE-ID: cpe:/a:pcre:pcre
+Maintainer: Shane Peelar <lookatyouhacker@gmail.com>
+Architecture: x86_64
+Installed-Size: 430080
+Filename: libpcre2-32_10.42-r1_x86_64.ipk
+Size: 162931
+SHA256sum: f94510c31bfddc17b8aa4c3528bd733294b413bfa589f010f72e1d277e3e9d26
+Description:  A Perl Compatible Regular Expression library (32bit support)
+
 Package: libpcre2
 Version: 10.42-r1
 Depends: libc
@@ -1120,8 +1333,8 @@ Maintainer: Shane Peelar <lookatyouhacker@gmail.com>
 Architecture: x86_64
 Installed-Size: 512000
 Filename: libpcre2_10.42-r1_x86_64.ipk
-Size: 188817
-SHA256sum: bcf04fc60bb10ffcaeb3af05f2657282f05f473ebf0baa140b8b3b9adcb2e935
+Size: 188821
+SHA256sum: 264143561829d9122e62bf9230d03ac7d46509285e6d768665cb7a4a5cdd6465
 Description:  A Perl Compatible Regular Expression library
 
 Package: libpopt0
@@ -1208,6 +1421,22 @@ Size: 9580
 SHA256sum: 3a619b952255ade68ff34e128fbe313162f3badd0f11a85261613082c8c4ad2c
 Description:  This pacakge contains libss, a command-line interface parsing library
  bundled with e2fsprogs.
+
+Package: libubox-lua
+Version: 2024.03.29~eb9bcb64-r1
+Depends: libc, libubox20240329, liblua5.1.5
+Source: feeds/base/libs/libubox
+SourceName: libubox
+License: ISC
+Section: libs
+SourceDateEpoch: 1712395458
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 30720
+Filename: libubox-lua_2024.03.29~eb9bcb64-r1_x86_64.ipk
+Size: 6381
+SHA256sum: 1e5b29f196075f7204187e38a63548ffe980e134b7291399e975afb5f3d8c7f1
+Description:  Lua binding for the OpenWrt Basic utility library
 
 Package: libubox20240329
 Version: 2024.03.29~eb9bcb64-r1
@@ -1347,6 +1576,44 @@ Size: 4913
 SHA256sum: 1054cb5beeadfc83dcdecf01f3fd2cf22a8bca0d7b39454befb851daeda61b7f
 Description:  udebug client library
 
+Package: libunistring
+Version: 1.1-r1
+Depends: libc
+Source: feeds/base/libs/libunistring
+SourceName: libunistring
+License: GPL-3.0
+LicenseFiles: COPYING
+Section: libs
+SourceDateEpoch: 1684160081
+URL: https://www.gnu.org/software/libunistring
+CPE-ID: cpe:/a:gnu:libunistring
+Architecture: x86_64
+Installed-Size: 1740800
+Filename: libunistring_1.1-r1_x86_64.ipk
+Size: 664162
+SHA256sum: 521e37d16d423c26df85f865facf66484e5788838a0e5d670006e340236d202c
+Description:  This library provides functions for manipulating Unicode strings
+ and for manipulating C strings according to the Unicode standard.
+
+Package: libustream-mbedtls20201210
+Version: 2024.04.07~d61493a4-r1
+Depends: libc, libubox20240329, libmbedtls13
+Conflicts: libustream-openssl, libustream-wolfssl
+Provides: libustream-mbedtls
+Source: feeds/base/libs/ustream-ssl
+SourceName: ustream-ssl
+License: ISC
+Section: libs
+SourceDateEpoch: 1712512869
+ABIVersion: 20201210
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: x86_64
+Installed-Size: 20480
+Filename: libustream-mbedtls20201210_2024.04.07~d61493a4-r1_x86_64.ipk
+Size: 5689
+SHA256sum: 6df444e74e4d5021d79233ad9a8f1c552dd87f3f33d5f1a2577c719e0f59451b
+Description:  ustream SSL Library (mbedtls)
+
 Package: libustream-openssl20201210
 Version: 2024.04.07~d61493a4-r1
 Depends: libc, libubox20240329, libopenssl3
@@ -1387,6 +1654,24 @@ Description:  The UUID library is used to generate unique identifiers for object
  that may be accessible beyond the local system. This library
  generates UUIDs compatible with those created by the Open Software
  Foundation (OSF) Distributed Computing Environment (DCE) utility.
+
+Package: libxml2
+Version: 2.12.5-r1
+Depends: libc, libpthread, zlib
+Source: feeds/base/libs/libxml2
+SourceName: libxml2
+License: MIT
+LicenseFiles: COPYING
+Section: libs
+SourceDateEpoch: 1712231146
+URL: http://xmlsoft.org/
+CPE-ID: cpe:/a:xmlsoft:libxml2
+Architecture: x86_64
+Installed-Size: 1105920
+Filename: libxml2_2.12.5-r1_x86_64.ipk
+Size: 493943
+SHA256sum: ba019e224751b15b077be40bd6046db43aae8f0d255fb4f2a8525c4d1674f466
+Description:  A library for manipulating XML and HTML resources.
 
 Package: logd
 Version: 2024.01.24~2c5887cb-r2
@@ -2030,6 +2315,24 @@ Size: 58108
 SHA256sum: 5e7c4967a9732822ed2964a88737ee04f032f195e53d1448856e1d6bac974d5e
 Description:  OpenWrt system process manager
 
+Package: qos-scripts
+Version: 1.3.1-r33
+Depends: libc, tc, kmod-sched-core, kmod-sched-connmark, kmod-ifb, iptables, iptables-mod-ipopt, iptables-mod-conntrack-extra
+Source: feeds/base/network/config/qos-scripts
+SourceName: qos-scripts
+License: GPL-2.0
+Section: utils
+SourceDateEpoch: 1684402529
+Maintainer: Felix Fietkau <nbd@nbd.name>
+Architecture: all
+Installed-Size: 40960
+Filename: qos-scripts_1.3.1-r33_all.ipk
+Size: 7286
+SHA256sum: 8eddd693ed5b75964e5797f9c4e35b54478fdc2481985b05c759c6d150013a7c
+Description:  A set of scripts that abstract QoS configuration into a simple 
+ configuration file supporting stanzas that specify any number of QoS 
+ entries.
+
 Package: quickstart
 Version: 0.8.9-r1
 Depends: libc, shadow-utils, shadow-useradd, mount-utils, block-mount, lsblk, e2fsprogs, parted, smartmontools, smartd, mdadm, ip-full, ubus, uci, bash
@@ -2192,6 +2495,26 @@ Filename: taskd_1.0.3-r2_all.ipk
 Size: 2377
 SHA256sum: edb09c05fa044d56e2bbfc59d18f6ef19df39644ed14f5d049c92faed77dbfdb
 Description:  Simple Task Manager based on procd
+
+Package: tc-tiny
+Version: 6.7.0-r1
+Depends: libc, kmod-sched-core
+Provides: tc
+Alternatives: 200:/sbin/tc:/usr/libexec/tc-tiny
+Source: feeds/base/network/utils/iproute2
+SourceName: iproute2
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1706195305
+URL: http://www.linuxfoundation.org/collaborate/workgroups/networking/iproute2
+CPE-ID: cpe:/a:iproute2_project:iproute2
+Maintainer: Russell Senior <russell@personaltelco.net>
+Architecture: x86_64
+Installed-Size: 358400
+Filename: tc-tiny_6.7.0-r1_x86_64.ipk
+Size: 162340
+SHA256sum: d8537c0e8d8bc84281d8fb654aba2fc2c31bd1fb411538f8ca88bd4d66130d77
+Description:  Traffic control utility (minimal)
 
 Package: terminfo
 Version: 6.4-r2
